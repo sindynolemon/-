@@ -10,3 +10,28 @@
      </div>
 <hr>
 <button onclick="alert (".")>chicken wings </button> 
+  
+// Select the button by its ID
+const button = document.getElementById("colorButton");
+
+// Function to change the background color
+function changeBackgroundColor() {
+  // Array of color options
+  const colors = [
+    "#FF5733",
+    "#33FF57",
+    "#3357FF",
+    "#F1C40F",
+    "#9B59B6",
+    "#1ABC9C"
+  ];
+
+  // Pick a random color from the array
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+  // Change the body's background color to the selected color
+  document.body.style.backgroundColor = randomColor;
+
+button.addEventListener('click', changeBackgroundColor);
+}
+
